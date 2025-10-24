@@ -5,7 +5,7 @@ if (${NLopt_FOUND})
 else (${NLopt_FOUND})
   MESSAGE(STATUS "Could not locate NLopt.")
   include(FetchContent)
-FetchContent_Declare(
+  FetchContent_Declare(
     nlopt
     URL https://github.com/stevengj/nlopt/archive/refs/tags/v2.10.0.zip
     DOWNLOAD_EXTRACT_TIMESTAMP TRUE
